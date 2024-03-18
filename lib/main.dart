@@ -16,6 +16,9 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.amber,
+        appBar: AppBar(
+          title: const Text("MY APPS"),
+        ),
         body: Center(
           child: Container(
             padding: const EdgeInsets.all(10),
@@ -25,14 +28,14 @@ class _MyAppState extends State<MyApp> {
                 width: 2,
               ),
             ),
-            child: const Text(
-              "Hallo Anton",
-              style: TextStyle(fontSize: 30),
+            child: ElevatedButton(
+              onPressed: () {},
+              child: const Text(
+                "Hallo Anton",
+                style: TextStyle(fontSize: 30),
+              ),
             ),
           ),
-        ),
-        appBar: AppBar(
-          title: const Text("MY APPS"),
         ),
       ),
     );
