@@ -1,5 +1,3 @@
-// ignore_for_file: non_constant_identifier_names
-
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -15,12 +13,13 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flut',
         home: Scaffold(
-          appBar: AppBar(
-            title: Text("Login Anton"),
-          ),
-          body: Container(),
-        ));
+      body: const Center(
+        child: Text("Hallo Anton"),
+      ),
+      appBar: AppBar(
+        title: const Text("MY APPS"),
+      ),
+    ));
   }
 }
